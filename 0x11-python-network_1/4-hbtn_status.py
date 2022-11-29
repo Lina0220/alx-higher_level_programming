@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 """
-fetch form a give website and display in a given format
+    Script that fetches https://intranet.htbtn.io/status
 """
+
 import requests
 
+
 if __name__ == "__main__":
-    res = requests.get("https://intranet.hbtn.io/status")
+    r = requests.get('https://alx-intranet.hbtn.io/status')
     print("Body response:")
-    print("\t- type: {}".format(type(res.text)))
-    print("\t- content: {}".format(res.text))
+    print("\t- type: {}".format(type(r.text)))
+    print("\t- content: {}".format(r.text))
